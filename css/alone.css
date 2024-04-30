@@ -1,0 +1,145 @@
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .text-shadow {
+    --bs-text-shadow-color: rgba(0, 0, 0, 0.5); /* bayangan hitam dengan kecerahan 50% */
+    --bs-text-shadow-x: 0.1rem; /* jarak horizontal */
+    --bs-text-shadow-y: 0.1rem; /* jarak vertikal */
+    --bs-text-shadow-blur: 0.2rem; /* radius kabur */
+    text-shadow: var(--bs-text-shadow-x) var(--bs-text-shadow-y) var(--bs-text-shadow-blur) var(--bs-text-shadow-color);
+  }
+  
+  .bg-shadow {
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 12%, rgba(0,0,0,0) 100%);
+  }
+
+  .image-container {
+    position: relative;
+}
+
+.image-container::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan tingkat transparansi 0.5 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Sesuaikan tingkat transparansi di sini */
+    transition: opacity 0.3s ease; /* Animasi perubahan transparansi */
+}
+
+.image-container:hover::before {
+    opacity: 1; /* Ketika mouse mengarah ke gambar, transparansi menjadi 1 (sepenuhnya hitam) */
+}
+
+.red-link {
+  color: blue; /* Warna default tautan */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  transition: color 0.3s; /* Efek perubahan warna dengan durasi 0.3 detik */
+}
+
+.red-link:hover {
+  color: red; /* Warna tautan ketika dihover menjadi merah */
+}
+
+.black-link {
+  color: black; /* Mengatur warna tautan menjadi hitam */
+  text-decoration: none; /* Menghapus garis bawah pada tautan */
+  transition: color 0.3s; /* Efek perubahan warna dengan durasi 0.3 detik */
+}
+
+.black-link:hover {
+  color: red; /* Warna tautan ketika dihover menjadi merah */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+#search-bar {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  padding: 6px;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 40px 0;
+}
+
+
+.custom-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #dc3545; /* Warna border */
+  color: #dc3545; /* Warna teks */
+  text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+  transition: color 0.3s, background-color 0.3s; /* Efek transisi warna */
+}
+
+.custom-button:hover {
+  color: #fff; /* Warna teks saat disentuh */
+  background-color: #dc3545; /* Warna latar belakang saat disentuh */
+}

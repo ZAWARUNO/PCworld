@@ -1,2 +1,2 @@
-# PCworld
-tugas meniru membuat tampilan web yang saya bikin saat baru mempelajari html css dan bootstrap 
+# REPLIKA UI https://www.pcworld.com/
+Ulangan Meniru Tampilan Website Menggunakan HTML, CSS, JS, BOOTSTRAP 🔥
